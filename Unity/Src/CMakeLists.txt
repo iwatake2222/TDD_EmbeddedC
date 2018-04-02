@@ -1,0 +1,11 @@
+# file(GLOB SOURCES  ./*.c)
+file(GLOB_RECURSE SOURCES  ./*.c)
+
+if(TARGET_GROUP STREQUAL test)
+	list(REMOVE_ITEM SOURCES "Main.c")
+	add_library(Src STATIC ${SOURCES})
+	target_include_directories(Src PUBLIC ${CMAKE_CURRENT_LIST_DIR} ${PROJECT_SOURCE_DIR}/Include)
+else()
+	add_executable(project1 ${SOURCES})
+	target_include_directories(project1 PUBLIC ${CMAKE_CURRENT_LIST_DIR} ${PROJECT_SOURCE_DIR}/Include)
+endif()

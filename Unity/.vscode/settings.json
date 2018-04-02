@@ -1,0 +1,13 @@
+{
+	"files.associations": {
+		"unity_fixture.h": "c",
+		"sub.h": "c",
+		"myfunc.h": "c",
+		"stdio.h": "c",
+		"unity.h": "c",
+		"leddriver.h": "c",
+		"runtimeerrorstub.h": "c",
+		"runtimeerror.h": "c",
+		"stdint.h": "c"
+	}
+}
