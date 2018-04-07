@@ -7,3 +7,6 @@
 [submodule "Unity/Test/External/Unity"]
 	path = Unity/Test/External/Unity
 	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "Unity/Test/External/cmock"]
+	path = Unity/Test/External/cmock
+	url = https://github.com/throwtheswitch/cmock.git
