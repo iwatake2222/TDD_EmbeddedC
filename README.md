@@ -11,3 +11,11 @@
 - [Unity](./Unity)
 - [CppUTest](./CppUTest)
 - [Google Test](./GoogleTest)
+
+
+## How to Clone the Project
+```sh
+git clone https://github.com/take-iwiw/TDD_EmbeddedC.git
+cd TDD_EmbeddedC
+git submodule update -i
+```

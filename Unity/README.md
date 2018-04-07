@@ -6,18 +6,11 @@
 - Unit Test Framework: Unity
 - Build tool: CMake
 
-# How to Clone the Project
-```sh
-git clone https://github.com/take-iwiw/TDD_EmbeddedC.git
-cd TDD_EmbeddedC/Unity
-git submodule update -i
-```
-
 # How to Build
 For test code
 
 ```sh:test_code
-cd Build
+cd TDD_EmbeddedC/Unity/Build
 cmake .. -G "MSYS Makefiles" -DTARGET_GROUP=test -DCMAKE_BUILD_TYPE=DEBUG
 make
 # ctest --verbose
@@ -27,11 +20,17 @@ make
 For product code
 
 ```sh:product_code
-cd Build
+cd TDD_EmbeddedC/Unity/Build
 cmake .. -G "MSYS Makefiles" -DTARGET_GROUP=production -DCMAKE_BUILD_TYPE=DEBUG
 make clean all
 ./bin/project1.exe
 ```
+
+# How to use cmock
+- Install ruby (for MinGW `pacman -S ruby`)
+- Create the directory named 'mocks' (`mkdir mocks`)
+- `ruby.exe ../Test/External/cmock/lib/cmock.rb ../Include/MyFunc.h`
+
 
 ### Note
 I use the same binary name(project1.exe) both for test code and product code, so that I can use the same command to run the project with test/production option. (They should be different names, but I'm just lazy...)

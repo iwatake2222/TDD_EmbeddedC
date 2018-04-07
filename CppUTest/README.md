@@ -6,18 +6,11 @@
 - Unit Test Framework: CppUTest
 - Build tool: CMake
 
-# How to Clone the Project
-```sh
-git clone https://github.com/take-iwiw/TDD_EmbeddedC.git
-cd TDD_EmbeddedC/CppUTest
-git submodule update -i
-```
-
 # How to Build
 For test code
 
 ```sh:test_code
-cd Build
+cd TDD_EmbeddedC/CppUTest/Build
 cmake .. -G "MSYS Makefiles" -DTARGET_GROUP=test -DCMAKE_BUILD_TYPE=DEBUG
 make
 # ctest --verbose
@@ -27,7 +20,7 @@ make
 For product code
 
 ```sh:product_code
-cd Build
+cd TDD_EmbeddedC/CppUTest/Build
 cmake .. -G "MSYS Makefiles" -DTARGET_GROUP=production -DCMAKE_BUILD_TYPE=DEBUG
 make clean all
 ./bin/project1.exe
