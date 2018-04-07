@@ -4,3 +4,6 @@
 [submodule "CppUTest/Test/External/cpputest"]
 	path = CppUTest/Test/External/cpputest
 	url = https://github.com/cpputest/cpputest.git
+[submodule "GoogleTest/Test/External/googletest"]
+	path = GoogleTest/Test/External/googletest
+	url = https://github.com/google/googletest.git
