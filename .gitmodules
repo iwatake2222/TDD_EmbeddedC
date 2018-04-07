@@ -1,9 +1,9 @@
-[submodule "Unity/External/Unity"]
-	path = Unity/External/Unity
-	url = https://github.com/ThrowTheSwitch/Unity.git
 [submodule "CppUTest/Test/External/cpputest"]
 	path = CppUTest/Test/External/cpputest
 	url = https://github.com/cpputest/cpputest.git
 [submodule "GoogleTest/Test/External/googletest"]
 	path = GoogleTest/Test/External/googletest
 	url = https://github.com/google/googletest.git
+[submodule "Unity/Test/External/Unity"]
+	path = Unity/Test/External/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
