@@ -30,7 +30,7 @@ static ioData MockIO_read_wrapper(ioAddress address)
 
 }
 
-class FlashTest2 : public ::testing::Test
+class FlashTest_GoogleMock_C : public ::testing::Test
 {
 protected:
 	virtual void SetUp()
@@ -62,7 +62,7 @@ protected:
 };
 
 
-TEST_F(FlashTest2, WriteSucceeds_ImmediatelyReady)
+TEST_F(FlashTest_GoogleMock_C, WriteSucceeds_ImmediatelyReady)
 {
 	/* Set expected IO access sequence */
 	InSequence dummy;

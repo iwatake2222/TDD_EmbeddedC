@@ -9,7 +9,7 @@ using ::testing::AtLeast;
 using ::testing::InSequence;
 
 
-class FlashTes_Class : public ::testing::Test
+class FlashTest_GoogleMock_CPP : public ::testing::Test
 {
 private:
 	class MockIO_Class : public IIO_Class {
@@ -42,7 +42,7 @@ protected:
 };
 
 
-TEST_F(FlashTes_Class, WriteSucceeds_ImmediatelyReady)
+TEST_F(FlashTest_GoogleMock_CPP, WriteSucceeds_ImmediatelyReady)
 {
 	/* Set expected IO access sequence */
 	InSequence dummy;

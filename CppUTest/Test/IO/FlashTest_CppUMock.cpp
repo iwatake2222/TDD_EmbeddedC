@@ -23,7 +23,7 @@ extern "C" {
 }
 
 
-TEST_GROUP(Flash2)
+TEST_GROUP(FlashTest_CppUMock)
 {
 	ioAddress m_address;
 	ioData m_data;
@@ -47,7 +47,7 @@ TEST_GROUP(Flash2)
 	}
 };
 
-TEST(Flash2, WriteSucceeds_ImmediatelyReady)
+TEST(FlashTest_CppUMock, WriteSucceeds_ImmediatelyReady)
 {
 	/* Set expected IO access sequence */
 	mock().expectOneCall("IO_write")
