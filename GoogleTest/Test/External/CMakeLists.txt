@@ -1,4 +1,4 @@
-# Use my own CMakeLists.txt instead of that of googletest
+# # Use my own CMakeLists.txt instead of that of googletest
 # add_library(gtest_main STATIC googletest/googletest/src/gtest_main.cc)
 # add_library(gtest STATIC googletest/googletest/src/gtest-all.cc)
 # add_library(gmock STATIC googletest/googlemock/src/gmock-all.cc)
