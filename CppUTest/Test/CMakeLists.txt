@@ -14,6 +14,7 @@ target_include_directories(project1 PUBLIC ${CMAKE_CURRENT_LIST_DIR} ${PROJECT_S
 target_link_libraries(project1 Src)
 target_link_libraries(project1 Mock)
 
+# add_subdirectory(External)
 add_subdirectory(External/cpputest)
 target_link_libraries(project1 CppUTest)
 target_link_libraries(project1 CppUTestExt)
