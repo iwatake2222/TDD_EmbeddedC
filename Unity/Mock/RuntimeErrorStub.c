@@ -1,5 +1,5 @@
 #include "RuntimeErrorStub.h"
-#include "RuntimeError.h"
+#include "Util/RuntimeError.h"
 
 static const char * s_message = "No Error";
 static int s_parameter = -1;

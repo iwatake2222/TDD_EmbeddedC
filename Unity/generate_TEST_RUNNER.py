@@ -58,6 +58,7 @@ def main():
 	# 	RUN_TEST_CASE(FakeTimeService, Create);
 	# 	RUN_TEST_CASE(FakeTimeService, Set);
 	# }
+	print("/*** TEST_RUNNER (Don't forget to call RUN_TEST_GROUP) ***/")
 	for test_group in list_test:
 		print("TEST_GROUP_RUNNER({0})".format(test_group[0]))
 		print("{")

@@ -29,10 +29,10 @@ make clean all
 # How to use cmock
 - Install ruby (for MinGW `pacman -S ruby`)
 - Create the directory named 'mocks' (`mkdir mocks`)
-- `ruby.exe ../Test/External/cmock/lib/cmock.rb ../Include/MyFunc.h`
+- `ruby.exe ../Test/External/cmock/lib/cmock.rb ../Include/IO/IO.h`
 
 # How to generate test runner code
-`python ../generate_TEST_RUNNER.py ../Test/TestCode.cpp`
+`python ../generate_TEST_RUNNER.py ../Test/TestCode.c`
 
 ### Note
 I use the same binary name(project1.exe) both for test code and product code, so that I can use the same command to run the project with test/production option. (They should be different names, but I'm just lazy...)

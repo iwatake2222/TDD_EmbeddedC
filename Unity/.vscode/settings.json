@@ -8,6 +8,11 @@
 		"leddriver.h": "c",
 		"runtimeerrorstub.h": "c",
 		"runtimeerror.h": "c",
-		"stdint.h": "c"
+		"stdint.h": "c",
+		"faketimeservice.h": "c",
+		"cmock.h": "c",
+		"mockio_cmock.h": "c",
+		"unity_internals.h": "c",
+		"io.h": "c"
 	}
 }

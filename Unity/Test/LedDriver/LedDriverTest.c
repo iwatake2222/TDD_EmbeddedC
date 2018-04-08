@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <unity_fixture.h>
 #include "LedDriver/LedDriver.h"
-#include "Mock/RuntimeErrorStub.h"
+#include "RuntimeErrorStub.h"
 
 TEST_GROUP(LedDriver);
 

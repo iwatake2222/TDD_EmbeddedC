@@ -10,7 +10,7 @@ set(TARGET_GROUP production CACHE STRING "What Should I Build?")
 
 ### Common source directory
 add_subdirectory(Src)
-
+add_subdirectory(External)
 
 ### Switch for unit test
 if(TARGET_GROUP STREQUAL production)
@@ -18,7 +18,8 @@ if(TARGET_GROUP STREQUAL production)
 elseif(TARGET_GROUP STREQUAL test)
 	message("test")
 	include(CTest)
-	add_subdirectory(test) 
+	add_subdirectory(Test)
+	add_subdirectory(Mock)
 else() 
 	message(FATAL_ERROR "I don't know the TARGET_GROUP you gave me!")
 endif()

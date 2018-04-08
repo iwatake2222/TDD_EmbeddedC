@@ -1,6 +1,8 @@
 #ifndef LED_DRIVER_H_
 #define LED_DRIVER_H_
 
+#include <stdint.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
